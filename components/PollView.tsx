@@ -128,6 +128,14 @@ export default function PollView({ initialPoll, initialOptions }: Props) {
     setTimeout(() => setCopied(false), 1500);
   }
 
+  async function copyLinkKiosk() {
+    await navigator.clipboard.writeText(
+      `${window.location.origin}/kiosk/${poll.id}`,
+    );
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  }
+
   return (
     <>
       <section className="card poll">
@@ -172,6 +180,9 @@ export default function PollView({ initialPoll, initialOptions }: Props) {
         {isOwner && (
           <div className="owner-actions">
             <span className="meta">내가 만든 투표</span>
+            <button className="btn btn-ghost" onClick={copyLinkKiosk}>
+              KIOSK
+            </button>
             <button
               className="btn btn-ghost btn-sm"
               onClick={() => setShowQR(true)}
