@@ -1,0 +1,290 @@
+{
+  "timestamp": "2026-11-21T12:53:13.079Z",
+  "reason": "compaction",
+  "status": {
+    "version": "3.0",
+    "lastUpdated": "2026-11-21T12:50:59.512Z",
+    "activeFeatures": [
+      "[id]",
+      "vote-app",
+      "results",
+      "polls",
+      "poll-list-and-results",
+      "(main)",
+      "vote"
+    ],
+    "primaryFeature": "[id]",
+    "features": {
+      "[id]": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-11-21T11:33:13.707Z",
+          "lastUpdated": "2026-11-21T12:50:59.512Z"
+        },
+        "lastFile": "/Users/timothy/Downloads/vote-app/app/(main)/polls/[id]/page.tsx"
+      },
+      "vote-app": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-11-21T11:36:03.244Z",
+          "lastUpdated": "2026-11-21T12:50:43.058Z"
+        },
+        "lastFile": "/Users/timothy/Downloads/vote-app/components/PollQR.tsx"
+      },
+      "results": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-11-21T12:05:35.861Z",
+          "lastUpdated": "2026-11-21T12:20:01.429Z"
+        },
+        "lastFile": "/Users/timothy/Downloads/vote-app/app/polls/[id]/results/page.tsx"
+      },
+      "polls": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-11-21T12:19:44.023Z",
+          "lastUpdated": "2026-11-21T12:19:44.023Z"
+        },
+        "lastFile": "/Users/timothy/Downloads/vote-app/app/polls/page.tsx"
+      },
+      "poll-list-and-results": {
+        "phase": "act",
+        "phaseNumber": 5,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-11-21T12:22:21.423Z",
+          "lastUpdated": "2026-11-21T12:22:21.424Z"
+        },
+        "previousPhase": "check",
+        "autoAdvanced": true
+      },
+      "(main)": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-11-21T12:49:49.991Z",
+          "lastUpdated": "2026-11-21T12:49:49.991Z"
+        },
+        "lastFile": "/Users/timothy/Downloads/vote-app/app/(main)/layout.tsx"
+      },
+      "vote": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-11-21T12:49:58.820Z",
+          "lastUpdated": "2026-11-21T12:49:58.820Z"
+        },
+        "lastFile": "/Users/timothy/Downloads/vote-app/app/vote/layout.tsx"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-11-21T10:36:08.431Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-11-21T12:50:59.512Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-11-21T11:33:13.707Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T11:36:03.244Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T11:42:10.866Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T11:54:00.800Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T11:54:10.359Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T11:54:18.390Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T11:58:23.762Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:02:36.352Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:02:42.765Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:02:46.812Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:05:22.392Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:05:35.861Z",
+        "feature": "results",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:19:17.496Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:19:38.059Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:19:44.023Z",
+        "feature": "polls",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:20:01.429Z",
+        "feature": "results",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:22:21.424Z",
+        "feature": "poll-list-and-results",
+        "phase": "act",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:34:41.150Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:49:49.991Z",
+        "feature": "(main)",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:49:55.544Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:49:58.820Z",
+        "feature": "vote",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:50:33.295Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:50:38.672Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:50:43.058Z",
+        "feature": "vote-app",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-11-21T12:50:59.512Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      }
+    ],
+    "stateMachine": {
+      "defaultWorkflow": "default",
+      "activeWorkflows": {},
+      "totalTransitions": 0
+    },
+    "automation": {
+      "globalLevel": 2,
+      "trustScore": 40,
+      "pendingApprovals": 0,
+      "lastGateResult": null
+    },
+    "team": {
+      "enabled": true,
+      "stateFile": ".bkit/runtime/agent-state.json",
+      "eventsFile": ".bkit/runtime/agent-events.jsonl"
+    }
+  }
+}
