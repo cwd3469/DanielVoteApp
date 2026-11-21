@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "lastUpdated": "2026-11-21T13:06:39.477Z",
+  "lastUpdated": "2026-11-21T14:07:26.748Z",
   "activeFeatures": [
     "[id]",
     "vote-app",
@@ -9,7 +9,9 @@
     "poll-list-and-results",
     "(main)",
     "vote",
-    "vote-only-page"
+    "vote-only-page",
+    "login",
+    "logout"
   ],
   "primaryFeature": "[id]",
   "features": {
@@ -22,9 +24,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-11-21T11:33:13.707Z",
-        "lastUpdated": "2026-11-21T12:59:21.640Z"
+        "lastUpdated": "2026-11-21T13:54:24.489Z"
       },
-      "lastFile": "/Users/timothy/Downloads/vote-app/app/(main)/polls/[id]/page.tsx"
+      "lastFile": "/Users/timothy/Downloads/vote-app/app/vote/[id]/opengraph-image.tsx"
     },
     "vote-app": {
       "phase": "do",
@@ -35,9 +37,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-11-21T11:36:03.244Z",
-        "lastUpdated": "2026-11-21T13:06:39.477Z"
+        "lastUpdated": "2026-11-21T14:07:26.748Z"
       },
-      "lastFile": "/Users/timothy/Downloads/vote-app/components/PollView.tsx"
+      "lastFile": "/Users/timothy/Downloads/vote-app/proxy.ts"
     },
     "results": {
       "phase": "do",
@@ -88,7 +90,7 @@
       "documents": {},
       "timestamps": {
         "started": "2026-11-21T12:49:49.991Z",
-        "lastUpdated": "2026-11-21T12:49:49.991Z"
+        "lastUpdated": "2026-11-21T14:00:17.899Z"
       },
       "lastFile": "/Users/timothy/Downloads/vote-app/app/(main)/layout.tsx"
     },
@@ -118,6 +120,32 @@
       },
       "previousPhase": "check",
       "autoAdvanced": true
+    },
+    "login": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-11-21T13:59:57.173Z",
+        "lastUpdated": "2026-11-21T14:04:03.573Z"
+      },
+      "lastFile": "/Users/timothy/Downloads/vote-app/app/login/page.tsx"
+    },
+    "logout": {
+      "phase": "do",
+      "phaseNumber": 3,
+      "matchRate": null,
+      "iterationCount": 0,
+      "requirements": [],
+      "documents": {},
+      "timestamps": {
+        "started": "2026-11-21T14:00:00.912Z",
+        "lastUpdated": "2026-11-21T14:00:00.912Z"
+      },
+      "lastFile": "/Users/timothy/Downloads/vote-app/app/api/logout/route.ts"
     }
   },
   "pipeline": {
@@ -128,7 +156,7 @@
   "session": {
     "startedAt": "2026-11-21T10:36:08.431Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-11-21T13:06:39.477Z"
+    "lastActivity": "2026-11-21T14:07:26.748Z"
   },
   "history": [
     {
@@ -367,6 +395,66 @@
     },
     {
       "timestamp": "2026-11-21T13:06:39.477Z",
+      "feature": "vote-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T13:54:17.216Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T13:54:24.489Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T13:59:53.408Z",
+      "feature": "vote-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T13:59:57.173Z",
+      "feature": "login",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:00:00.912Z",
+      "feature": "logout",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:00:09.574Z",
+      "feature": "login",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:00:12.774Z",
+      "feature": "vote-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:00:17.899Z",
+      "feature": "(main)",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:04:03.574Z",
+      "feature": "login",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:07:26.748Z",
       "feature": "vote-app",
       "phase": "do",
       "action": "updated"

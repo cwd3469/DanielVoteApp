@@ -1,11 +1,30 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-/**
- * 요청마다 Supabase 세션(액세스 토큰)을 갱신해 쿠키에 다시 써줍니다.
- * (Next.js 16 부터 middleware.ts → proxy.ts 로 이름이 바뀜)
- */
+const ADMIN_COOKIE = "admin_session";
+
 export async function proxy(request: NextRequest) {
+  const { pathname } = request.nextUrl;
+
+  // 공개 경로: 투표 참여 페이지, 로그인, API 로그인/로그아웃
+  const isPublic =
+    pathname.startsWith("/vote/") ||
+    pathname === "/login" ||
+    pathname.startsWith("/api/login") ||
+    pathname.startsWith("/api/logout");
+
+  if (!isPublic) {
+    const token = request.cookies.get(ADMIN_COOKIE)?.value;
+    const adminPassword = process.env.NEXT_PUBLIC_ADMIN_PASSWORD;
+
+    if (!adminPassword || token !== adminPassword) {
+      const loginUrl = new URL("/login", request.url);
+      loginUrl.searchParams.set("from", pathname);
+      return NextResponse.redirect(loginUrl);
+    }
+  }
+
+  // Supabase 세션 갱신
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key =
     process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ??
@@ -29,7 +48,6 @@ export async function proxy(request: NextRequest) {
     },
   });
 
-  // 토큰 검증 + 만료 시 갱신
   await supabase.auth.getClaims();
 
   return response;
