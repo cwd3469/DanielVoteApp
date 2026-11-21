@@ -70,8 +70,6 @@ export default function VoteView({ initialPoll, initialOptions }: Props) {
   }
 
   const hasVoted = (myVotes?.length ?? 0) > 0;
-  const totalVotes = options.reduce((s, o) => s + o.vote_count, 0);
-  const maxVotes = Math.max(0, ...options.map((o) => o.vote_count));
 
   return (
     <div className="vote-page">
@@ -85,37 +83,16 @@ export default function VoteView({ initialPoll, initialOptions }: Props) {
         // Design Ref: §2.4 — myVotes === null 로딩 중
         <p className="vote-loading">잠시만요…</p>
       ) : hasVoted ? (
-        /* Plan SC: FR-04 — 이미 투표 → 결과 표시 */
-        <>
-          <p className="vote-done">투표해 주셔서 감사합니다.</p>
-          <ul className="vote-result-list">
-            {options.map((o) => {
-              const pct = totalVotes
-                ? Math.round((o.vote_count / totalVotes) * 100)
-                : 0;
-              const isTop = o.vote_count > 0 && o.vote_count === maxVotes;
-              const isMine = myVotes?.includes(o.id);
-              return (
-                <li key={o.id}>
-                  <div className={`vote-result-item ${isTop ? "top" : ""}`}>
-                    <span className="vote-result-bar" style={{ width: `${pct}%` }} />
-                    <span className="vote-result-label">
-                      {isMine && (
-                        <span className="mine" style={{ marginRight: 6 }}>
-                          내 선택
-                        </span>
-                      )}
-                      {o.label}
-                    </span>
-                    <span className="vote-result-pct">
-                      {pct}% <small>({o.vote_count})</small>
-                    </span>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        </>
+        /* Plan SC: FR-04 — 이미 투표 → 감사 메시지 + 내 선택만 표시 */
+        <div className="vote-done-wrap">
+          <p className="vote-done">수고하셨습니다.</p>
+          {options.filter((o) => myVotes?.includes(o.id)).map((o) => (
+            <div key={o.id} className="vote-my-pick">
+              <span className="mine">내 선택</span>
+              {o.label}
+            </div>
+          ))}
+        </div>
       ) : (
         /* Plan SC: FR-01, FR-03 — 투표 UI */
         <>

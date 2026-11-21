@@ -611,11 +611,30 @@ textarea:focus {
   padding: 48px 0;
   font-size: 1rem;
 }
+.vote-done-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+}
 .vote-done {
   text-align: center;
-  padding: 24px 0 8px;
   color: var(--muted);
   font-size: 0.95rem;
+  margin: 0;
+}
+.vote-my-pick {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 20px;
+  border: 2px solid var(--accent);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* 투표 결과 (vote 페이지 내) */
