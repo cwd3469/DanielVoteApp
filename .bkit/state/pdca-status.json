@@ -1,6 +1,6 @@
 {
   "version": "3.0",
-  "lastUpdated": "2026-11-21T14:23:30.116Z",
+  "lastUpdated": "2026-11-21T14:46:04.187Z",
   "activeFeatures": [
     "[id]",
     "vote-app",
@@ -24,9 +24,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-11-21T11:33:13.707Z",
-        "lastUpdated": "2026-11-21T13:54:24.489Z"
+        "lastUpdated": "2026-11-21T14:45:49.232Z"
       },
-      "lastFile": "/Users/timothy/Downloads/vote-app/app/vote/[id]/opengraph-image.tsx"
+      "lastFile": "/Users/timothy/Downloads/vote-app/app/kiosk/[id]/page.tsx"
     },
     "vote-app": {
       "phase": "do",
@@ -37,9 +37,9 @@
       "documents": {},
       "timestamps": {
         "started": "2026-11-21T11:36:03.244Z",
-        "lastUpdated": "2026-11-21T14:23:30.116Z"
+        "lastUpdated": "2026-11-21T14:46:04.187Z"
       },
-      "lastFile": "/Users/timothy/Downloads/vote-app/components/VoteView.tsx"
+      "lastFile": "/Users/timothy/Downloads/vote-app/components/KioskView.tsx"
     },
     "results": {
       "phase": "do",
@@ -156,7 +156,7 @@
   "session": {
     "startedAt": "2026-11-21T10:36:08.431Z",
     "onboardingCompleted": false,
-    "lastActivity": "2026-11-21T14:23:30.116Z"
+    "lastActivity": "2026-11-21T14:46:04.187Z"
   },
   "history": [
     {
@@ -467,6 +467,24 @@
     },
     {
       "timestamp": "2026-11-21T14:23:30.116Z",
+      "feature": "vote-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:45:44.117Z",
+      "feature": "vote-app",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:45:49.232Z",
+      "feature": "[id]",
+      "phase": "do",
+      "action": "updated"
+    },
+    {
+      "timestamp": "2026-11-21T14:46:04.187Z",
       "feature": "vote-app",
       "phase": "do",
       "action": "updated"

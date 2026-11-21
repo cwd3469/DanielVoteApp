@@ -9,6 +9,7 @@ export async function proxy(request: NextRequest) {
   // 공개 경로: 투표 참여 페이지, 로그인, API 로그인/로그아웃
   const isPublic =
     pathname.startsWith("/vote/") ||
+    pathname.startsWith("/kiosk/") ||
     pathname === "/login" ||
     pathname.startsWith("/api/login") ||
     pathname.startsWith("/api/logout");
